@@ -21,7 +21,7 @@ function getSelectedOption() {
   var x = document.getElementById("mySelect");
   var selectedOption = x.options[x.selectedIndex].text;
   var selectedValue = x.options[x.selectedIndex].value;
-  var result = "" + selectedOption + "" + selectedValue;
+  var result = "" + selectedOption + "<br>" + selectedValue;
   document.getElementById("demo").innerHTML = result;
 }
 </script>
