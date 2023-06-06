@@ -19,12 +19,6 @@ function getIndex()
   alert(x.selectedIndex)
   }
 </script>
-<script function visit_web (menu)
-{
-	if (menu.selectedIndex > 0)
-		window.open("http://" + menu.options[menu.selectedIndex].value);
-}
-</script>
 </head>
 <body>
 
@@ -38,7 +32,7 @@ Select your favorite fruit:
 </select>
 <br /><br />
 <input type="button" onclick="getIndex()"
-value="Alert index of selected option">
+value="getIndex()">
 </form>
 <form>
 <p>你最愛吃的水果是：
