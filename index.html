@@ -68,22 +68,22 @@ function myFunction() {
 ​
 <h3>A demonstration of how to access an OPTION element</h3>
 ​
-<select id="answer">
-  <option id="myOption" value="volvocar">1</option>
-  <option id="myOption" value="volvocar">2</option>
-  <option id="option2" value="saabcar">3</option>
-  <option id="option2" value="saabar">4</option>
+<select>
+  <option id="1" value="volvocar"><button onlick="myFunction()">1</option>
+  <option id="2" value="volvocar">2</option>
+  <option id="3" value="saabcar">3</option>
+  <option id="4" value="saabar">4</option>
 </select>
 ​
 <p>Click the button to get the text of the Volvo option in the drop-down list.</p>
 ​
-<button onclick="myFunction()">Try it</button>
+<!--<button onclick="myFunction()">Try it</button>-->
 ​
 <p id="demo"></p>
 ​
 <script>
 function myFunction() {
-  var x = document.getElementById("answer").text;
+  var x = document.getElementById("myFunction").text;
   document.getElementById("demo").innerHTML = x;
 }
 </script>
