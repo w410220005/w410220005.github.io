@@ -71,8 +71,8 @@ function myFunction() {
 <select>
   <option id="myOption" value="volvocar">1</option>
   <option id="myOption" value="volvocar">2</option>
-  <option value="saabcar">3</option>
-  <option value="saabar">4</option>
+  <option id="option2" value="saabcar">3</option>
+  <option id="option2" value="saabar">4</option>
 </select>
 ​
 <p>Click the button to get the text of the Volvo option in the drop-down list.</p>
@@ -83,7 +83,7 @@ function myFunction() {
 ​
 <script>
 function myFunction() {
-  var x = document.getElementById("myOption").text;
+  var x = document.getElementById("option2").text;
   document.getElementById("demo").innerHTML = x;
 }
 </script>
