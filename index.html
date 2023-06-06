@@ -63,7 +63,7 @@ function myFunction() {
 </html>-->
 
 <!DOCTYPE html>
-<html>
+<!--<html>
 <body>
 ​
 <h3>A demonstration of how to access an OPTION element</h3>
@@ -76,8 +76,7 @@ function myFunction() {
 </select>
 ​
 <p>Click the button to get the text of the Volvo option in the drop-down list.</p>
-​
-<!--<button onclick="myFunction()">Try it</button>-->
+​button onclick="myFunction()">Try it</button>
 ​
 <p id="demo"></p>
 ​
@@ -89,4 +88,34 @@ function myFunction() {
 </script>
 ​
 </body>
+
+<!DOCTYPE html>
+<html>
+<body>
+​
+<h3>A demonstration of how to access an OPTION element</h3>
+​
+<select id="mySelect">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="saabcar">Saab</option>
+</select>
+​
+<p>Click the button to get the text of the selected option in the drop-down list.</p>
+​
+<button onclick="myFunction()">Try it</button>
+​
+<p id="demo"></p>
+​
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect");
+  var selectedOption = x.options[x.selectedIndex].text;
+  document.getElementById("demo").innerHTML = selectedOption;
+}
+</script>
+​
+</body>
 </html>
+
+</html>-->
