@@ -19,6 +19,11 @@ function getIndex()
   alert(x.selectedIndex)
   }
 </script>
+function visit_web (menu)
+{
+	if (menu.selectedIndex > 0)
+		window.open("http://" + menu.options[menu.selectedIndex].value);
+}
 </head>
 <body>
 
@@ -33,6 +38,19 @@ Select your favorite fruit:
 <br /><br />
 <input type="button" onclick="getIndex()"
 value="Alert index of selected option">
+</form>
+<form>
+<p>你最愛吃的水果是：
+<select onchange="choose_fruit(this);">
+  <option value="apple">蘋果</option>
+  <option value="banna">香蕉</option>
+  <option value="orange">橘子</option>
+</select>
+</p>
+<p>你選的答案是：
+<input type="text" size="4" maxlength="4"
+     onkeypress="return false;">
+</p>
 </form>
 
 </body>
