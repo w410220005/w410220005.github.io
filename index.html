@@ -37,7 +37,7 @@ value="getIndex()">
 
 </body>
 </html>-->
-<!DOCTYPE html>
+<!--<!DOCTYPE html>
 <html>
 <body>
 ​
@@ -56,6 +56,35 @@ function myFunction() {
   var x = document.getElementById("mySelect").selectedIndex;
   var y = document.getElementById("mySelect").options;
   alert("Index: " + y[x].index + " is " + y[x].text);
+}
+</script>
+​
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<body>
+​
+<h3>A demonstration of how to access an OPTION element</h3>
+​
+<select>
+  <option id="myOption" value="volvocar">1</option>
+  <option id="myOption" value="volvocar">2</option>
+  <option value="saabcar">3</option>
+  <option value="saabar">4</option>
+</select>
+​
+<p>Click the button to get the text of the Volvo option in the drop-down list.</p>
+​
+<button onclick="myFunction()">Try it</button>
+​
+<p id="demo"></p>
+​
+<script>
+function myFunction() {
+  var x = document.getElementById("myOption").text;
+  document.getElementById("demo").innerHTML = x;
 }
 </script>
 ​
