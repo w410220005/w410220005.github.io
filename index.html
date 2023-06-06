@@ -68,7 +68,7 @@ function myFunction() {
 ​
 <h3>A demonstration of how to access an OPTION element</h3>
 ​
-<select>
+<select id="answer">
   <option id="myOption" value="volvocar">1</option>
   <option id="myOption" value="volvocar">2</option>
   <option id="option2" value="saabcar">3</option>
@@ -83,7 +83,7 @@ function myFunction() {
 ​
 <script>
 function myFunction() {
-  var x = document.getElementById("option2").text;
+  var x = document.getElementById("answer").text;
   document.getElementById("demo").innerHTML = x;
 }
 </script>
