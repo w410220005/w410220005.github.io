@@ -1,0 +1,349 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+
+<link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!--<style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>-->
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="dashboard.css" rel="stylesheet">
+  </head>
+  <body>
+    <!--navbars-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" >Badminton</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Home_page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Basic_introduction.html">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Link.html">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Model</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Victor.html">Victor</a></li>
+                <li><a class="dropdown-item" href="Yonex.html">Yonex</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!--cheatsheet-->
+    <div class="container-fluid">
+      <div class="row">
+        <div class="sidebar border border-right col-md-3 col-lg-2 p-0 bg-body-tertiary">
+          <div class="offcanvas-lg offcanvas-end bg-body-tertiary" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
+              <ul class="nav flex-column">
+                <aside class="bd-aside sticky-xl-top text-body-secondary align-self-start mb-3 mb-xl-5 px-2">
+                  <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">On this page</h2>
+                  <nav class="small" id="toc">
+                    <ul class="list-unstyled">
+                      <li class="my-2">
+                        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#introduction-collapse" aria-controls="introduction-collapse">基本介紹</button>
+                        <ul class="list-unstyled ps-3 collapse" id="introduction-collapse">
+                          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#weight">重量</a></li>
+                          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#grip">握柄
+                          </a></li>
+                        </ul>
+                      </li>
+                      <li class="my-2">
+                        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#midshot-collapse" aria-controls="midshot-collapse">中桿</button>
+                        <ul class="list-unstyled ps-3 collapse" id="midshot-collapse">
+                          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#gardness">硬度</a></li>
+                          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#elasticity">彈性</a></li>
+                        </ul>
+                      </li>
+                      <li class="my-2">
+                        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#balance-collapse" aria-controls="balance-collapse">重心</button>
+                      </li>
+                      <li class="my-2">
+                        <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#frame-collapse" aria-controls="frame-collapse">拍框</button>
+                        <ul class="list-unstyled ps-3 collapse" id="frame-collapse">
+                          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#box">盒型</a></li>
+                          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#brokewind">破風型</a></li>
+                          <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#complex">複合型</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </nav>
+                </aside>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2 active" aria-current="page" href="#">
+                    <svg class="bi"><use xlink:href="#house-fill"/></svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <svg class="bi"><use xlink:href="#file-earmark"/></svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <svg class="bi"><use xlink:href="#cart"/></svg>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-flex align-items-center gap-2" href="#">
+                    <svg class="bi"><use xlink:href="#people"/></svg>
+                  </a>
+                </li>
+              </ul>
+          </div>
+        </div>
+       
+        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+          <p></p>
+          <main class="container">
+          <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
+            <article class="my-3" id="weight">
+              <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h4>重量</h4></div>
+              <div class="bd-example-snippet bd-code-snippet">
+                <ul class="list-inline">
+                  <li class="list-inline-item">用U來表達，U值越大重量越輕，計算公式是用100公克(g)減去U值，而每個U代表的是5公克，相減後的值代表這支球拍的重量在這個值以上，以4u為例，4u相當於用100公克-4*5公克=80公克，所以代表球拍的重量在80公克以上。依此類推：2U=90～95g；3U=85～89g；4U=80～84g；5U=75～79g一般推薦以4U為一個基準值，多數球友會選擇這個重量的球拍。當力量與技術件提升時可以嘗試3U的球拍，可加大擊球攻擊力道，而較入門或尚未掌握發力要點者可以考慮5U的球拍。
+                  </li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="my-3" id="grip">
+              <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h4>握柄</h4></div>
+              <div class="bd-example-snippet bd-code-snippet">
+                <ul class="list-inline">
+                  <li class="list-inline-item">用G來表達，G越大握柄越細，計算方式是握柄的周長，亞洲常見的粗細有G4大概86mm，G5大概83mm，G6大概80mm。
+
+                    而握柄粗細會影響到我們對球拍的掌握還有控制性，一般來說都推薦選G5或G6的規格。G5為最大眾的規格，G6則適合手較小或女性球友使用。
+              </li>
+                </ul>
+              </div>
+            </article>
+            <section id="midshot">
+              <article class="my-3" id="gardness">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h3>硬度</h3></div>
+                <div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="display-6">Display 6</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="h6">Heading 6</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">This is a list item.</li>
+                    <li class="list-inline-item">And another one.</li>
+                    <li class="list-inline-item">But they're displayed inline.</li>
+                  </ul>
+                  </div></div>
+                </div>
+              </article>
+      
+              <article class="my-3" id="elasticity">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h3>彈性</h3></div>
+                <div>
+                  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive image</text></svg>
+                  </div></div>
+                  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+                  <svg class="bd-placeholder-img img-thumbnail" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text></svg>
+                  </div></div>
+                </div>
+              </article>
+            </section>
+            <!--重心-->
+            <section id="midshot">
+              <article class="my-3" id="gardness">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h3>硬度</h3></div>
+                <div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="display-6">Display 6</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="h6">Heading 6</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">This is a list item.</li>
+                    <li class="list-inline-item">And another one.</li>
+                    <li class="list-inline-item">But they're displayed inline.</li>
+                  </ul>
+                  </div></div>
+                </div>
+              </article>
+            </section>
+            <!--拍框-->
+            <section id="frame">
+              <article class="my-3" id="box">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h3>盒型</h3></div>
+                <div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="display-6">Display 6</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="h6">Heading 6</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet">
+                      <div class="bd-example m-0 border-0">
+                      <p class="lead">This is a lead paragraph. It stands out from regular paragraphs.</p>
+                      </div>
+                  </div>
+                  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+                  <ul class="list-inline">
+                    <li class="list-inline-item">This is a list item.</li>
+                    <li class="list-inline-item">And another one.</li>
+                    <li class="list-inline-item">But they're displayed inline.</li>
+                  </ul>
+                  </div></div>
+                </div>
+              </article>
+      
+              <article class="my-3" id="brokewind">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h3>破風型</h3></div>
+                <div>
+                  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+                  <svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">Responsive image</text></svg>
+                  </div></div>
+                  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+                  <svg class="bd-placeholder-img img-thumbnail" width="200" height="200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera: 200x200" preserveAspectRatio="xMidYMid slice" focusable="false"><title>A generic square placeholder image with a white border around it, making it resemble a photograph taken with an old instant camera</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">200x200</text></svg>
+                  </div></div>
+                </div>
+              </article>
+              
+              <article class="my-3" id="complex">
+                <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h3>複合型</h3></div>
+                <div>
+                  <div class="bd-example-snippet bd-code-snippet"><div class="bd-example m-0 border-0">
+                  <figure class="figure">
+                    <svg class="bd-placeholder-img figure-img img-fluid rounded" width="400" height="300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 400x300" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#868e96"/><text x="50%" y="50%" fill="#dee2e6" dy=".3em">400x300</text></svg>
+                    <figcaption class="figure-caption">A caption for the above image.</figcaption>
+                  </figure>
+                  </div></div>
+                </div>
+              </article>
+            </section>
+          </div>
+          </main>
+        </main>
+      </div>
+    </div>
+    
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.2.1/dist/chart.umd.min.js" integrity="sha384-gdQErvCNWvHQZj6XZM0dNsAoY4v+j5P1XDpNkcM3HJG1Yx04ecqIHk7+4VBOCHOG" crossorigin="anonymous"></script><script src="dashboard.js"></script></body>
+</html>
