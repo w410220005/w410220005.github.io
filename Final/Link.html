@@ -60,6 +60,19 @@
 </p>
 </form>
     <main class="container">
+      <form>
+<p>你最愛吃的水果是：
+<select onchange="choose_fruit(this);">
+  <option value="apple">蘋果</option>
+  <option value="banna">香蕉</option>
+  <option value="orange">橘子</option>
+</select>
+</p>
+<p>你選的答案是：
+<input type="text" size="4" maxlength="4"
+     onkeypress="return false;">
+</p>
+</form>
         <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis bg-body-secondary">
           <div class="col-lg-6 px-0">
             <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
