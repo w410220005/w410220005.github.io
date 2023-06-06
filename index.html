@@ -1,4 +1,4 @@
-
+<!--
 <!DOCTYPE html>
 <html>
 <body>
@@ -14,6 +14,34 @@
 <p>Click the button to get the text of the selected option in the drop-down list.</p>
 ​
 <button onclick="myFunction()">Try it</button>
+​
+<p id="demo"></p>
+​
+<script>
+function myFunction() {
+  var x = document.getElementById("mySelect");
+  var selectedOption = x.options[x.selectedIndex].text;
+  document.getElementById("demo").innerHTML = selectedOption;
+}
+</script>
+​
+</body>
+</html>-->
+
+<!DOCTYPE html>
+<html>
+<body>
+​
+<h3>A demonstration of how to access an OPTION element</h3>
+​
+<select id="mySelect">
+  <option value="1" button onclick="myFunction()">1</option>
+  <option value="2">2</option>
+  <option value="saabcar">Saab</option>
+</select>
+​
+<p>Click the button to get the text of the selected option in the drop-down list.</p>
+​
 ​
 <p id="demo"></p>
 ​
