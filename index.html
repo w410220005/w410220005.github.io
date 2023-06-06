@@ -69,9 +69,9 @@ function myFunction() {
 <h3>A demonstration of how to access an OPTION element</h3>
 ​
 <select>
-  <option id="1" value="volvocar"><button onlick="myFunction()">1</option>
-  <option id="2" value="volvocar">2</option>
-  <option id="3" value="saabcar">3</option>
+  <option id="myoption" value="volvocar"><button onlick="myFunction()">1</option>
+  <option id="myoption" value="volvocar">2</option>
+  <option id="myoption" value="saabcar">3</option>
   <option id="4" value="saabar">4</option>
 </select>
 ​
@@ -83,7 +83,7 @@ function myFunction() {
 ​
 <script>
 function myFunction() {
-  var x = document.getElementById("myFunction").text;
+  var x = document.getElementById("myoption").text;
   document.getElementById("demo").innerHTML = x;
 }
 </script>
