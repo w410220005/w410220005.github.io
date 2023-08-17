@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>test1</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Final</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
+    <!-- Custom styles for this template -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="dashboard.css" rel="stylesheet">
+<style>
+
+.header {
+
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100; 
+
+}
+
+
+/* Style the side navigation */
+.sidenav {
+  height: 90.7%;
+  width: 210px;
+  position: fixed;
+  padding: 5px;
+  bottom: 0%;
+  left: 0;
+  background-color: rgba(196, 194, 194, 0.15);
+  overflow-x: hidden;
+  border-right: 1px solid #a6a5a557; /* 添加右侧边框样式 */
+}
+
+
+/* Side navigation links */
+.sidenav a {
+  color: rgba(67, 67, 67, 0.747);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: #a6a5a557;
+  color: black;
+}
+
+/* Style the content */
+.content {
+  height: 90.7%;
+  width: 950px;
+  position: absolute;
+  padding: 5px;
+  bottom: 0%;
+  right: 0;
+  
+ 
+}
+.bd-heading {
+  position: relative;
+  z-index: 0;
+}
+
+</style>
+</head>
+<body>
+ <!--navbars-->
+<header id="header" class="header">
+ 
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark" aria-label="Third navbar example">
+      <div class="container-fluid">
+        <a class="navbar-brand" >Badminton</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample03" aria-controls="navbarsExample03" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarsExample03">
+          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Home_page.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Basic_introduction.html">Introduction</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Link.html">Link</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Model</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Victor.html">Victor</a></li>
+                <li><a class="dropdown-item" href="Yonex.html">Yonex</a></li>
+              </ul>
+            </li>
+          </ul>
+          <form role="search">
+            <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          </form>
+        </div>
+      </div>
+    </nav>
+</header>
+
+ 
+<!--cheatsheet-->
+<div class="sidenav">
+    <aside class="bd-aside sticky-xl-top text-body-secondary align-self-start mb-3 mb-xl-5 px-2">
+      <h2 class="h6 pt-4 pb-3 mb-4 border-bottom">On this page</h2>
+      <nav class="small" id="toc">
+        <ul class="list-unstyled">
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#introduction-collapse" aria-controls="introduction-collapse">基本介紹</button>
+            <ul class="list-unstyled ps-3 collapse" id="introduction-collapse">
+              <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#weight">重量</a></li>
+              <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#grip">握柄</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#midshot-collapse" aria-controls="midshot-collapse">中桿</button>
+            <ul class="list-unstyled ps-3 collapse" id="midshot-collapse">
+              <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#hardness">硬度</a></li>
+              <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#elasticity">彈性</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#balance-collapse" aria-controls="balance-collapse" >重心</button>
+            <ul class="list-unstyled ps-3 collapse" id="balance-collapse">
+              <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#balance">重心</a></li>
+            </ul>
+          </li>
+          <li class="my-2">
+            <button class="btn d-inline-flex align-items-center collapsed border-0" data-bs-toggle="collapse" aria-expanded="false" data-bs-target="#frame-collapse" aria-controls="frame-collapse">拍框</button>
+            <ul class="list-unstyled ps-3 collapse" id="frame-collapse">
+              <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#box">盒型</a></li>
+              <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#brokewind">破風型</a></li>
+              <li><a class="d-inline-flex align-items-center rounded text-decoration-none" href="#complex">複合型</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+</div>
+<!--constant-->
+<div class="content">
+  
+  <main class="container">
+    <div id="weight"></div>
+    <div class="p-4 p-md-5 mb-4 rounded text-body-emphasis ">
+      <article class="my-3" >
+        <h4 class="pb-2 border-bottom" >基本介紹</h4>
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h5>重量</h5></div>
+        <div class="bd-example-snippet bd-code-snippet" >
+          <ul class="list-inline">
+            <li class="list-inline-item" >
+              用U來表達，U值越大重量越輕，計算公式是用100公克(g)減去U值，而每個U代表的是5公克，相減後的值代表這支球拍的重量在這個值以上，以4u為例，4u相當於用100公克-4*5公克=80公克，所以代表球拍的重量在80公克以上。
+              <br>(依此類推：2U=90～95g；3U=85～89g；4U=80～84g；5U=75～79g)
+              <br><br>一般推薦以4U為一個基準值，多數球友會選擇這個重量的球拍。當力量與技術件提升時可以嘗試3U的球拍，可加大<div id="grip"></div>擊球攻擊力道，而較入門或尚未掌握發力要點者可以考慮5U的球拍。
+            </li>
+          </ul>
+        </div>
+      </article>
+      
+      <br >
+      <article class="my-3" >
+        <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h5>握柄</h5></div>
+        <div class="bd-example-snippet bd-code-snippet" >
+          <ul class="list-inline">
+            <li class="list-inline-item" >
+              用G來表達，G越大握柄越細，計算方式是握柄的周長，亞洲常見的粗細有G4大概86mm，G5大概83mm，G6大概80mm。
+              而握柄粗細會影響到我們對球拍的掌握還有控制性，一般來說都推薦選G5或G6的規<br><div id="hardness"></div>格。G5為最大眾的規格，G6則適合手較小或女性球友使用。
+            </li>
+          </ul>
+        </div>
+      </article>
+      <!--中桿--><br>
+      <section id="midshot">
+        <article class="my-3" >
+          <h4 class="pb-2 border-bottom">中桿</h4>
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h5>硬度</h5></div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <ul class="list-inline">
+              <li class="list-inline-item">硬度代表需要施多少力使中桿產生變形和彈性。<br><br>
+                可以想像成弓，線越硬，就需要更大的力氣才能向後拉將弓箭射出，發出更快的箭。羽球也是一樣，如果中桿越硬，需要更大的力氣才能是中桿發生變形，但相對也能使球速更快。
+                但如果力氣不夠，而使用硬中桿的球拍，就會發生球拍的彈性表現不出來而使球飛不遠飛不快的情況。<br><br>
+                而力氣夠大的人用中桿軟的球拍，會因為球拍傳導力量的上限較低，導致即便已經用非常大的力氣球速還是偏慢。
+                因<div id="elasticity"></div>此初學者或力氣較小的人通常建議拿中桿較軟的球拍，而力氣較大且有一定發力基礎的人可以拿中桿較硬的球拍。
+                </li>
+            </ul>
+          </div>
+        </article>
+        <br>
+        <article class="my-3" >
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h5>彈性</h5></div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <ul class="list-inline">
+              <li class="list-inline-item">彈性代表中桿發生變形後能將多少力量傳導到球上。如果有兩支一樣中桿硬度的球拍，一支彈性好另一支差，那麼即便用一樣的力量去擊球，會發現彈性好的球拍傳導力量較有效率能讓球飛的較快。<br><br>
+                <div id="balance"></div>而球拍的彈性好壞並不會被標示出來，只能透過實際去打球來體驗。
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <!--重心--><br>
+      <section id="midshot">
+        <article class="my-3">
+          <h4 class="pb-2 border-bottom">重心</h4>
+          <div class="bd-example-snippet bd-code-snippet">
+            <ul class="list-inline">
+              <li class="list-inline-item">表示平衡點的方式是測量球拍底部到球拍重量中心點的距離，單位為公釐(mm)，例如一支球拍的平衡點在290mm，代表球拍的平衡點在從球拍底部算起29公分的位置。
+                平衡點代表球拍的重心位置，約可區分為三種表現：
+                <br><br>1.平衡點靠拍頭，拍頭重的球拍揮拍更有帶動性，但在平球與防守時會較費力。
+                <br>2.平衡點靠中間的球拍在各球路表現較均衡，建議初學者可以選擇平衡型的拍子。
+                <br><div id="box"></div>3.平衡點靠手柄，拍頭輕的球拍揮拍快速，但需要更多力量將球送至後場。
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <!--拍框--><br>
+      <section id="frame">
+        <article class="my-3" >
+          <h4 class="pb-2 border-bottom">拍框</h4>
+            <div class="bd-example-snippet bd-code-snippet">
+            <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h5>盒型</h5></div>
+            <ul class="list-inline">
+              <li class="list-inline-item">擁有強穩定性及抗扭性（擊球的時候拍框不易抖動扭曲），通常可以承受更高的穿線磅數，並因在擊球時更具有攻擊性而常用於進攻類型的球拍，但相對拍框受到的空氣阻力較大，因此揮拍會比較慢</li>
+            </ul>
+            </div>
+        </article>
+        <br>
+        <article class="my-3" id="brokewind">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h5>破風型</h5></div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                橢圓形:
+                在維持拍框一定的抗扭力下，進一步降低揮拍時的空氣阻力使得回球更為敏捷快速，是兼具穩定及速度的框形，常見於速度或全面類型的球拍。
+                <br><br>
+                菱形框:
+                &nbsp;菱形結構的拍框在橢圓形結構的基礎上更強化了破風能力，使空氣阻力進一步降低而讓擊球更為靈巧，無疑是最具代表性的速度框形。
+              </li>
+            </ul>
+          </div>
+        </article>
+        <br>
+        <article class="my-3" id="complex">
+          <div class="bd-heading sticky-xl-top align-self-start mt-5 mb-3 mt-xl-0 mb-xl-2"><h5>複合型</h5></div>
+          <div class="bd-example-snippet bd-code-snippet">
+            <ul class="list-inline">
+              <li class="list-inline-item">
+                以下兩種雖同為複合框形，但其設計理念與前面提到的鑽石及八面刀鋒結構有所不同，是藉由分析球拍在揮動時的空氣流體動力學，將不同特性的框形結構設計在拍框的不同位置，以使框形特性得以發揮最大效果
+                <br><br>
+                鑽石破風框:
+                &nbsp;由底部到頂部逐漸變化，從底部橢圓形結構開始向頂部漸變為鑽石結構，在保持拍面穩定、結實的基礎上又兼有一定速度，因此用於全面類型的球拍
+                <br><br>
+                流體破風框: 
+                &nbsp;也是由底部到頂部逐漸變化，在保持揮拍速度的同時也兼有一定的穩定性，因此用於速度類型的球拍
+                </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+    </div>
+    </main>
+</div>
+
+</body>
+</html>
+
+
